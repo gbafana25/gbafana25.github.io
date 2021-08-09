@@ -1,0 +1,27 @@
+html {
+	background: black;
+
+}
+
+a {
+	color: white;
+
+}
+
+.title {
+	font-style: bold;
+	font-size: 60px;
+	color: white;
+	font-family: monospace;
+	text-align: center;
+	
+
+}
+
+.contact {
+	color: white;
+	font-family: monospace;
+	font-size: 20px;
+	text-align: center;
+
+}
