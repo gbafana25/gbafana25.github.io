@@ -1,0 +1,24 @@
+html {
+	background: black;
+}
+
+a {
+	color: white;
+}
+
+.title {
+	font-style: bold;
+	font-size: 60px;
+	color: white;
+	font-family: monospace;
+	text-align: center;
+
+}
+
+.line-desc {
+	list-style-type: none;
+	font-family: monospace;
+	text-align: center;
+	font-size: 30px;
+}
+
