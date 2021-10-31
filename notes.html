@@ -3,7 +3,20 @@
 <link rel="stylesheet" href="notes.css">
 </head>
 
-<ul class=title>Notes/One-liners</ul>
-	<li class=line-desc><i>Change tty font: </i>dpkg-reconfigure console-setup</li>
+<ul class=title>Useful Commands</ul>
+	<ul class=item-title><u><i>Change tty font: </i></u></ul>
+		<li class=item-content>dpkg-reconfigure console-setup</li>
+	<ul class=item-title><u><i>Convert video to audio</i></u></ul>
+		<li class=item-content>ffmpeg -i video.mkv audio.mp3</li>
+	<ul class=item-title><u><i>Discard uncommited changes</i></u></ul>
+		<li class=item-content>git restore <filename></li>
+	<ul class=item-title><u><i>Auto-configure external displays</i></u></ul>
+		<li class=item-content>xrandr --auto</li>
+	<ul class=item-title><u><i>Take screenshot (uses imagemagick)</i></u></ul>
+		<li class=item-content>import file.{jpg|png}</li>
+	<ul class=item-title><u><i>Get largest files in directory (GB)</i></u></ul>
+		<li class=item-content>sudo du -h / | sort -hr | head -n 10</li>
+	<ul class=item-title><u><i>Image an ISO to USB</i></u></ul>
+		<li class=item-content>dd if=file.iso of=/dev/sdx bs=4M status=progress</li>
 
 
