@@ -1,15 +1,7 @@
-html {
-	background: black;
-}
-
-a {
-	color: white;
-}
 
 .title {
 	font-style: bold;
 	font-size: 60px;
-	color: white;
 	font-family: monospace;
 	text-align: center;
 
@@ -18,14 +10,12 @@ a {
 .item-title {
 	list-style-type: none;
 	font-family: monospace;
-	color: white;
 	text-align: left;
 	font-size: 30px;
 }
 
 .item-content {
 	list-style-type: "$ ";
-	color: white;
 	font-family: monospace;
 	text-align: left;
 	font-size: 20px;
