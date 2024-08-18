@@ -3,18 +3,114 @@ html {
 	word-wrap: break-word;
 	margin: 0 auto;
 	font-family: monospace;
-	font-size: 200%;
+	font-size: 150%;
+	background-color: black;
+	color: white;
 
 }
 
 li ul {
 	display: inline-flex;
-
+	list-style-type: none;
 }
 
-h2 {
+h3 {
 	text-align: left;
-
 }
 
+.top-bar {
+	display:flex;
+	text-align: right;
+}
 
+a {
+	text-decoration: none;
+}
+
+.email-link {
+	font-weight: bolder;
+	color: white;
+}
+
+.email-link:hover {
+	color: rgba(255, 255, 255, 0.624);
+	transition-duration: 0.3s;
+}
+
+.home-container {
+	display:inline-flex;
+	list-style-type: none;
+}
+
+.project-entry {
+	background-size:contain;
+	color: white;	
+	font-weight: bolder;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	list-style-type: none;
+}
+
+.project-entry:hover {
+	opacity: 70%;
+	transition-duration: 0.3s;
+}
+
+.projects-section {
+	width: 70%; 
+	list-style-type: none;
+}
+
+.commands-section {
+	width: 70%;
+}
+
+.python-proj {
+	background-image: url('images/python-logo.jpg');	
+}
+
+.java-proj {
+	background-image: url('images/java-logo.png');	
+}
+
+.c-proj {
+	background-image: url('images/c-logo.png');
+	color: black;	
+}
+
+.command-entry {
+	background-size:contain;
+	font-weight: bolder;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	list-style-type: none;
+}
+
+.terminal-category {
+	background-color: rgba(0, 128, 0, 0.478);
+	color: white;
+}
+
+.command-entry:hover {
+	transition-duration: 0.3s;
+	opacity: 60%;
+}
+
+.git-category {
+	background-color: orangered;
+	color: white;
+}
+
+.av-category {
+	background-color: rgba(52, 52, 255, 0.789);
+	color: white;
+}
+
+.disk-category {
+	background-color:darkslategray;
+	color: white;
+}

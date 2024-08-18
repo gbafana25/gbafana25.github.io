@@ -1,7 +1,6 @@
 
 .title {
 	font-style: bold;
-	font-size: 60px;
 	font-family: monospace;
 	text-align: center;
 
@@ -12,6 +11,7 @@
 	font-family: monospace;
 	text-align: left;
 	font-size: 30px;
+	color: rgb(121, 119, 119);
 }
 
 .item-content {
@@ -19,6 +19,12 @@
 	font-family: monospace;
 	text-align: left;
 	font-size: 20px;
-	padding-left: 5%;
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+	max-width: 25%;
+	margin-left: 55px;
+	color: white;
 
 }
