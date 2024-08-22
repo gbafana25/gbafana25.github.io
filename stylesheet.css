@@ -67,6 +67,11 @@ a {
 	width: 70%;
 }
 
+.link-generator {
+	width: 70%;
+	color: white;
+}
+
 .python-proj {
 	background-image: url('images/python-logo.jpg');	
 }
