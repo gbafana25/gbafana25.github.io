@@ -4,6 +4,7 @@ var rand_tld = "";
 var rand_subdomain = "";
 
 async function getWordlists() {
+    var link = document.getElementById("test")
     fetch("https://data.iana.org/TLD/tlds-alpha-by-domain.txt")
         .then((resp) => {
             return resp.text()
@@ -20,10 +21,11 @@ async function getWordlists() {
             var r = Math.floor(Math.random() * subdomain_list.length)
             rand_subdomain = subdomain_list[r]
             console.log(rand_subdomain+"."+rand_tld)
+            link.innerHTML = rand_subdomain+"."+rand_tld
+            link.href = "https://"+rand_subdomain+"."+rand_tld
         }))
     
 }
 
 getWordlists()
-
 
