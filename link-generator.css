@@ -1,0 +1,29 @@
+html {
+    background-color: black;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-button {
+    padding: 50px;
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+    border-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.refresh-button {
+    padding: 30px;
+    background-color: rgb(92, 92, 255);
+    color: white;
+    font-weight: bolder;
+    border-color: rgb(92, 92, 255);
+    border-radius: 5px;
+}

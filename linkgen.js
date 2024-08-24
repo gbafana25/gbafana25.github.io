@@ -5,7 +5,8 @@ var rand_subdomain = "";
 
 async function getWordlists() {
     var link = document.getElementById("test")
-    fetch("https://data.iana.org/TLD/tlds-alpha-by-domain.txt")
+    if(tlds_list.length === 0 && subdomain_list.length === 0) {
+     fetch("https://data.iana.org/TLD/tlds-alpha-by-domain.txt")
         .then((resp) => {
             return resp.text()
         }).then((data) => {
@@ -23,9 +24,22 @@ async function getWordlists() {
             console.log(rand_subdomain+"."+rand_tld)
             link.innerHTML = rand_subdomain+"."+rand_tld
             link.href = "https://"+rand_subdomain+"."+rand_tld
-        }))
+        }))   
+    } else {
+        //subdomain_list = data.split(/\r?\n/)
+        var s = Math.floor(Math.random() * tlds_list.length)
+        rand_tld = tlds_list[s].toLowerCase()
+        var r = Math.floor(Math.random() * subdomain_list.length)
+        rand_subdomain = subdomain_list[r]
+        console.log(rand_subdomain+"."+rand_tld)
+        link.innerHTML = rand_subdomain+"."+rand_tld
+        link.href = "https://"+rand_subdomain+"."+rand_tld
+    }
+    
     
 }
 
 getWordlists()
+var refreshbtn = document.getElementById("refresh_btn")
+refreshbtn.addEventListener("click", getWordlists)
 
