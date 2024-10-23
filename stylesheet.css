@@ -59,17 +59,31 @@ a {
 }
 
 .projects-section {
-	width: 70%; 
+	width: 50%; 
 	list-style-type: none;
 }
 
 .commands-section {
-	width: 70%;
+	width: 50%;
 }
 
 .link-generator {
-	width: 70%;
 	color: white;
+	background-color: rgba(154, 95, 236, 0.838);
+	font-weight: bolder;
+	background-size: contain;
+	padding-left: 50%;
+	padding-right: 50%;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	margin-top: 90%;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.link-generator:hover {
+	opacity: 70%;
+	transition-duration: 0.3s;
 }
 
 .python-proj {
